@@ -1,1 +1,155 @@
+1. Purpose of the Dataset
 
+The Vectrix Slack Dataset represents the internal Slack workspace of Vectrix, a fictional seed-stage startup building an API observability platform.
+
+It is designed to simulate realistic team communication across different departments.
+
+The dataset is used for AI assistant benchmarking, specifically to evaluate:
+
+Information retrieval
+
+Thread context understanding
+
+Cross-platform reference tracking
+
+Handling incomplete or deleted information
+
+Understanding informal workplace conversations.
+
+2. Workspace Structure
+
+Workspace Name: Vectrix
+
+Workspace ID: T07VECTRIX
+
+Team Members: 10
+
+Total Messages: 130
+
+Channels: 7
+
+Direct Message Conversations: 3
+
+Each message contains metadata such as sender ID, timestamp, reactions, links, files, and thread relationships.
+
+3. Slack Channels Included
+
+The dataset includes seven Slack channels representing different areas of company communication.
+
+#general – Company announcements, onboarding messages, and team updates.
+
+#engineering – Technical discussions, debugging, deployments, and infrastructure issues.
+
+#product – Feature discussions, roadmap planning, and customer feedback.
+
+#sales – Deal updates, prospect discussions, and customer insights.
+
+#random – Casual conversations, memes, food discussions, and social interaction.
+
+#ops – Infrastructure alerts, vendor updates, and operational coordination.
+
+#design – Design reviews, Figma links, and UI feedback.
+
+4. Direct Message Conversations
+
+Three private DM conversations simulate sensitive or informal discussions between team members.
+
+DM-01: Marcus and Priya – hiring decisions and compensation discussions.
+
+DM-02: Tessa and Caleb – sales coaching and deal management.
+
+DM-03: Sofia and Liam – code review and engineering collaboration.
+
+DMs usually contain quick questions, mentoring, or sensitive topics.
+
+5. Message Types in the Dataset
+
+The dataset contains several types of Slack interactions.
+
+Standard Messages – Normal channel or DM messages sent by users.
+
+Threaded Messages – Replies attached to a parent message, common in engineering discussions.
+
+Emoji Reactions – Lightweight responses used for acknowledgement or agreement.
+
+File Sharing – Messages that include attachments such as screenshots, PDFs, CSV files, and logs.
+
+Cross-Platform Links – Messages referencing tools used by the company.
+
+6. External Tools Referenced
+
+Slack conversations frequently reference other systems used by the team.
+
+GitHub – Pull requests and code updates.
+
+Linear – Issue tracking (e.g., VEC-47).
+
+Google Drive – Product briefs, documentation, and architecture specs.
+
+Figma – Design prototypes and UI reviews.
+
+Grafana – Monitoring dashboards and infrastructure alerts.
+
+7. Realistic Communication Patterns
+
+The dataset mimics real Slack behavior commonly seen in startup teams.
+
+Short and informal messages
+
+Emoji reactions instead of full replies
+
+Message bursts during debugging sessions
+
+Threaded technical discussions
+
+Casual social conversations
+
+Frequent references to external tools and documents
+
+8. Edge Cases Included
+
+To improve realism, several special scenarios are included.
+
+Wrong Channel Message: A personal message accidentally posted in a technical channel and corrected immediately.
+
+Deleted Message Aftermath: A message containing sensitive information is deleted but referenced in replies.
+
+Typo Corrections: Users correct spelling errors using Slack’s *correction format.
+
+Unanswered Questions: Some messages receive no replies, reflecting real workplace communication.
+
+9. Dataset Structure
+
+The Slack dataset is stored in a single JSON file containing all workspace data.
+
+Structure:
+
+Workspace metadata
+
+User list with Slack IDs
+
+Channel conversations
+
+Threaded replies
+
+Reactions
+
+File attachments
+
+External links
+
+Direct message conversations
+
+10. Use Cases for the Dataset
+
+The Vectrix Slack dataset can be used to evaluate systems on tasks such as:
+
+Retrieving information from conversation history
+
+Understanding threaded discussions
+
+Linking conversations to external resources
+
+Identifying missing or deleted information
+
+Interpreting informal team communication.
